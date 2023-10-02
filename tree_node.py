@@ -9,9 +9,9 @@ class TreeNode:
     def __repr__(self, level=0, prefix="root: "):
         ret = " . " * level + prefix + repr(self.value) + "\n"
         if self.left is not None:
-            ret += self.left.__repr__(level+1, " L: ")
+            ret += self.left.__repr__(level+1, " left : ")
         if self.right is not None:
-            ret += self.right.__repr__(level+1, " R: ")
+            ret += self.right.__repr__(level+1, " right: ")
         return ret
 
 
